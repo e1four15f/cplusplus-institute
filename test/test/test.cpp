@@ -1,82 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "stdafx.h"
-#include <iostream>
-#include <cstring>
+#include <stdio.h>
 
-using namespace std;
-/*
-class String
+void f1()
 {
-private:
-	char *stroka;
-public:
-	String()
-	{
-		stroka = new char[0];
-	}
-	String(char *s)
-	{
-		stroka = new char[strlen(s) + 1];
-		//strcpy_s(stroka, sizeof(), s);
-		//Вот сдесь идет warning на то, что бы использовать
-		//strcpy_s. Но при использовании вылетает ошибка. что нет прототипа функции с 2-мя параметрами.
-		//Вот я немного и озадачился
-	}
-	~String()
-	{
-		delete[]stroka;
-		cout << "Строка успешно удалена" << endl;
-	}
-	void print()
-	{
-		cout << stroka << endl;
-	}
+	int a = 1, b = 2, c = 3;
 };
-*/
+
+void f2()
+{
+	int a, b, c;
+	printf("%d, %d, %d\n", a, b, c);
+};
 
 int main()
 {
-	/*
-	String s("Точность превыше всего");
-	s.print();
-	*/
-
-	char co[2];
-	char cn[2];
-
-	strcpy_s(cn, strlen(co), co);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	system("pause");
+	f1();
+	f2();
 	return 0;
 }
